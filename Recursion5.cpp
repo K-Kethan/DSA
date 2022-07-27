@@ -8,25 +8,25 @@ void print(int arr[], int s, int e) {
     } cout << endl;
 }
 
-bool binarySearch(int *arr, int s, int e , int k ) {
+bool binarySearch(int *arr, int start, int end , int k ) {
 
     //base case
 
     //element not found
-    if(s>e)
+    if(start>end)
         return false;
 
-    int mid = s + (e-s)/2;
+    int mid = start + (end-s)/2;
 
     //element found
     if(arr[mid] == k)
         return true;
 
     if(arr[mid] < k) {
-        return binarySearch(arr, mid+1, e, k);
+        return binarySearch(arr, mid+1, end, k);
     }
     else{
-        return binarySearch(arr, s, mid-1, k);
+        return binarySearch(arr, start, mid-1, k);
     }
 }
 
