@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+//given structure
 struct Job 
 { 
     int id;	 // Job Id 
