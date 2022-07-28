@@ -19,13 +19,13 @@ class Solution
     //Function to find the maximum profit and the number of jobs done.
     vector<int> JobScheduling(Job arr[], int n) 
     { 
-        // your code here
-        int maxi=0;
+        
+        int maxi=0; // to find maximum deadline
         for(int i=0;i<n;i++){
             if(arr[i].dead>maxi)
               maxi=arr[i].dead;
         }
-        vector<int> time(maxi,0);
+        vector<int> time(maxi,0); 
         vector<int> ans;
         sort(arr,arr+n,mycmp);
         
