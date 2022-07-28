@@ -39,7 +39,7 @@ class Solution
             }
             
         }
-        int count=0,prof=0;
+        int count=0,prof=0; //count-> no. of jobs
         for(auto x:time){
             if(x!=0)
             {
