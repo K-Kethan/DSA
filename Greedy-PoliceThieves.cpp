@@ -19,6 +19,17 @@ int maxThieves(char arr[],int n, int k)
             }
             if(flag)
             {
+                int y=min(n,i+k);
+                for(int j=i+1;j<=y;j++)
+                {
+                    if(arr[j]=='T')
+                    {
+                        arr[j]='C';
+                        count++;
+                        flag=false;
+                        break;
+                    }
+                }
                 
         }
             
