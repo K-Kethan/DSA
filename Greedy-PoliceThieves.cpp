@@ -30,6 +30,7 @@ int maxThieves(char arr[],int n, int k)
                         break;
                     }
                 }
+            }
                 
         }
             
