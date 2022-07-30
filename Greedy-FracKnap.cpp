@@ -7,7 +7,7 @@ bool myCmp(pair <int, int> a, pair <int, int> b)
 	return r1 > r2;
 }
 
-double fracKnapS(int W, pair <int, int> arr[], int n)
+double fracKnapS(int cap, pair <int, int> arr[], int n)
 {
 	sort(arr, arr + n, myCmp);
 
@@ -15,15 +15,15 @@ double fracKnapS(int W, pair <int, int> arr[], int n)
 
 	for(int i = 0; i < n; i++)
 	{
-		if(arr[i].second <= W)
+		if(arr[i].second <= cap)
 		{
 			res += arr[i].first;
 
-			W = W - arr[i].second;
+			cap = cap - arr[i].second;
 		}
 		else
 		{
-			res += arr[i].first * ((double) W / arr[i].second);
+			res += arr[i].first * ((double) cap / arr[i].second);
 
 			break;
 		}
