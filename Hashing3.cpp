@@ -1,3 +1,4 @@
+//INTERSECTION OF 2 ARRAYS
 int intersection(int arr1[], int m, int arr2[], int n)
 {
     unordered_set<int> us;
