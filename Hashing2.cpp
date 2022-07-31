@@ -1,3 +1,4 @@
+//FREQ OF ELEMENTS - HASHMAP
 void countFreq(int arr[], int n)
 {
     // Mark all array elements as not visited
