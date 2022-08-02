@@ -1,4 +1,5 @@
 //Find whether a pair(a,b) exists in given array such that a+b=Given sum
+
 int pairWithSumX(int arr[],int n, int X)
 {
     unordered_set<int> us;
