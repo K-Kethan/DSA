@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Union of two arrays
 int union(int arr1[], int m, int arr2[], int n)
 {
     unordered_set<int> us;
