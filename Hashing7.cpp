@@ -1,3 +1,5 @@
+//Subarray with given sum
+
 bool isSum(int arr[], int n, int sum)
 {
     unordered_set<int> s;
