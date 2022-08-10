@@ -12,6 +12,7 @@ struct Node
   }
 };
 
+//PREORDER TRAVERSAL
 void preorder(Node *root){
     if(root!=NULL){
         cout<<root->key<<" ";
