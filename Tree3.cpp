@@ -12,6 +12,7 @@ struct Node
   }
 };
 
+//postorder traversal
 void postorder(Node *root){
     if(root!=NULL){
         postorder(root->left);
