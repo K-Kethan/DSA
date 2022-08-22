@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Longest Subarray with equal number of 0s and 1s
+
 int largestZeroSubarray(int arr[], int n)
 {
     for(int i = 0; i < n; i++)
