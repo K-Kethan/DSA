@@ -1,3 +1,6 @@
+
+//Kth Smallest element
+
 int fun(int arr[],int n,int k)
 {
  priority_queue<int> maxi;
