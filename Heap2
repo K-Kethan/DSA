@@ -1,6 +1,6 @@
 
 
-//Kth  element
+//Kth Largest element
 
 int fun(int arr[],int n,int k)
 {
