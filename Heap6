@@ -1,3 +1,7 @@
+
+
+//MINIMUM COST TO CONNECT THE ROPES
+
 long long minCost(long long arr[], long long n) {
         // Your code here
         priority_queue<long long,vector<long long>,greater<long long>>mini(arr,arr+n);
