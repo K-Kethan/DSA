@@ -1,0 +1,15 @@
+long long minCost(long long arr[], long long n) {
+        // Your code here
+        priority_queue<long long,vector<long long>,greater<long long>>mini(arr,arr+n);
+        long long cost=0;
+        while(mini.size()>=2){
+            long long a=mini.top();
+            mini.pop();
+            long long b=mini.top();
+            mini.pop();
+            cost+=(a+b);
+            mini.push(a+b);
+        }
+        return cost;
+        
+    }
