@@ -1,12 +1,7 @@
+//FIND K-CLOSEST ELEMENTS
+//WE CALCULATE DIFFERENCE ARRAY(arr[i]-x) AND THEN FIND K LEAST DIFFERENCE ELEMENTS
+
 vector<int> findClosestElements(vector<int>& arr, int k, int x) {
-       /* vector<pair<int,int>>diff;
-        //unordered_map<int,int>h;
-        for(int i=0;i<arr.size();i++)  
-        {  
-            int a=abs(arr[i]-x);
-            diff.push_back({a,arr[i]});
-           // h[a]=arr[i];
-        }*/
         
         priority_queue<pair<int,int>>maxi;
         for(int i=0;i<arr.size();i++)
